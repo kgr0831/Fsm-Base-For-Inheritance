@@ -6,7 +6,7 @@ public class FsmBase
     {
         public StateAction OnEnter;
         public StateAction OnExit;
-        public StateAction OnUpdate;
+        public StateAction OnUpdate; 
 
         public void Enter() => OnEnter?.Invoke();
         public void Exit() => OnExit?.Invoke();
@@ -22,5 +22,5 @@ public class FsmBase
         _currentState.Enter();
     }
 
-    public void Update() => _currentState?.Update();
+    public void Update() => _currentState?.Update(); // In Unity(Update func)
 }
