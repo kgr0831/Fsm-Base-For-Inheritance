@@ -24,6 +24,11 @@ public class Useing : MonoBehaviour // In Unity
         ex.SetState(ex.state1); // change state
     }
 
+void Update()
+{
+  ex.Update(); // updating state
+}
+
     void OnState1Enter()
     {
         // code
